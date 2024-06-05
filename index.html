@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/app.js"></script>
+    <title>Todo List</title>
+    <style>
+        .border{
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="bg-[#000] h-[100vh] w-[100vw] flex items-center justify-center ">
+        <main class="bg-[#fff] w-[550px] rounded-[20px] p-[24px] ">
+            <h2 class="text-center text-[26px] font-[500] ">Todolist</h2>
+            <div class="mt-[22px] flex items-center w-full rounded-[9px] overflow-hidden gap-[6px] h-[50px] " >
+                <input class="px-[18px] h-full flex-1 outline-none border border-slate-400 rounded-l-[9px] main_input " type="text" >
+                <div class="flex items-center justify-center h-full cursor-pointer border border-slate-400 group px-[22px] rounded-r-[9px] hover:bg-cyan-400 bg-transparent transition hover:!border-cyan-400 " onclick="main_input_btn()" >
+                    <i class="fa-solid fa-plus text-[22px] group-hover:text-[#fff] text-slate-400 "></i>
+                </div>
+            </div>
+            <div class="mt-[32px] max-h-[300px] overflow-auto TotalListsMain ">
+                <!-- <div class="flex items-center w-full justify-between rounded-[6px] h-[46px] bg-cyan-300 mt-[5px] px-[22px] totalLlist ">
+                    <div class="flex items-center gap-[9px] h-full w-full pr-[90px] ">
+                        <input type="checkbox" name="" id="">
+                        <input value="jdncjbcjdjbcj" class="text-[#000] text-[14px] italic flex-1 outline-none border-[0px] h-[76%] bg-transparent border-slate-500 px-[8px] rounded-[6px] input_edit disabled " type="text">
+                    </div>
+                    <div class="flex items-center gap-[12px] ">
+                        <div class="flex items-center justify-center cursor-pointer " >
+                            <i class="fa-solid fa-pen text-[18px] text-[#000] "></i>
+                        </div>
+                        <div class="flex items-center justify-center cursor-pointer " >
+                            <i class="fa-solid fa-xmark text-[20px] text-[#000] "></i>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+
+
+        
+
+
+
+    </section>
+    <i class="fa-solid fa-check"></i>
+</body>
+</html>
