@@ -28,8 +28,13 @@ function main_input_btn() {
     }else{
         MainInput.classList.remove('!border-red-400');
         TotalListsMain.innerHTML = TotalListsMain.innerHTML + newList;
-        localStorage.setItem('key' , MainInput.value);
+        // for (let TotalListsMain = 0; TotalListsMain < TotalListsMain.length; i++) {
+        //     const element = TotalListsMain[i];
+        //     localStorage.setItem('Input Data' , element.value);
+        //     console.log(element)
+        // }
         MainInput.value = '';
+        localStorage.setItem('InputValue' , newList.value)
     }
 }
 
