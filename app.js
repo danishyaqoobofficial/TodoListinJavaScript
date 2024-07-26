@@ -1,10 +1,9 @@
+let TotalListsMain = document.querySelector('.TotalListsMain');
+TotalListsMain.innerHTML = localStorage.getItem('InputValue');
+
 function main_input_btn() {
 
     let MainInput = document.querySelector('.main_input');
-    let TotalListsMain = document.querySelector('.TotalListsMain');
-
-
-
 
     let newList = `
         <div class="flex items-center w-full justify-between rounded-[6px] h-[46px] bg-cyan-300 mt-[5px] px-[22px] totalLlist ">
@@ -34,7 +33,7 @@ function main_input_btn() {
         //     console.log(element)
         // }
         MainInput.value = '';
-        localStorage.setItem('InputValue' , newList.value)
+        localStorage.setItem('InputValue' , newList);
     }
 }
 
@@ -48,6 +47,7 @@ function main_input_btn() {
 function crossBtn(e) {
     let totalLlist = e.closest('.totalLlist')
     totalLlist.classList.add('!hidden');
+    localStorage.clear()
 }
 
 let value = true
